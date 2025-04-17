@@ -1,0 +1,194 @@
+:root {
+    --primary-blue: #030712;
+    --secondary-blue: #111827;
+    --accent-blue: #3b82f6;
+    --dark-bg: #000000;
+    --light-text: #f3f4f6;
+    --card-bg: #030712;
+    --border-color: #1e3a8a;
+    --hover-blue: #1e40af;
+    --success-green: #065f46;
+    --error-red: #991b1b;
+    --warning-yellow: #92400e;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: var(--primary-blue) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--accent-blue) !important;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: var(--secondary-blue);
+    color: var(--accent-blue);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.25rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.form-control {
+    background-color: var(--secondary-blue);
+    border: 1px solid var(--border-color);
+    color: var(--light-text);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: var(--secondary-blue);
+    border-color: var(--accent-blue);
+    color: var(--light-text);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-label {
+    color: var(--accent-blue);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--border-color);
+    border: none;
+    color: var(--light-text);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-blue);
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+#answer {
+    background-color: var(--secondary-blue);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+#answer h6 {
+    color: var(--accent-blue);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#answer p {
+    color: var(--light-text);
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.alert {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: var(--success-green);
+    color: var(--light-text);
+}
+
+.alert-danger {
+    background-color: var(--error-red);
+    color: var(--light-text);
+}
+
+.alert-warning {
+    background-color: var(--warning-yellow);
+    color: var(--light-text);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-blue);
+}
+
+/* Loading animation */
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 7, 18, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn-primary {
+        padding: 0.75rem 1rem;
+    }
+} 

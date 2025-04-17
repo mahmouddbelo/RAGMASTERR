@@ -1,0 +1,17 @@
+Flask==2.3.3
+python-dotenv==1.0.0
+requests==2.31.0
+python-magic==0.4.27
+PyPDF2==3.0.1
+python-docx==0.8.11
+python-pptx==0.6.21
+beautifulsoup4==4.12.2
+lxml==4.9.3
+langchain==0.1.12
+langchain-community==0.0.27
+langchain-google-genai==0.0.11
+langchain-text-splitters==0.0.1
+sentence-transformers==2.5.1
+faiss-cpu==1.7.4
+cohere==4.47
+gunicorn==21.2.0 
